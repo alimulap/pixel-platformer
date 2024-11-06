@@ -1,0 +1,4 @@
+Assets/*
+ProjectSettings/
+!Assets/scripts
+*.meta
