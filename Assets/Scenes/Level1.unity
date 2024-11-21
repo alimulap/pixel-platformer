@@ -247,6 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d9d076c6c460b439ffb21a86b79ba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
   moveSpeed: 1500
   jumpForce: 350
   downCastDebugDistance: 0.5
@@ -9560,15 +9561,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2140284851015327816, guid: 6d9e5eb177f80cf44ba659166cff3e1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.779512
+      value: -10.575
       objectReference: {fileID: 0}
     - target: {fileID: 2140284851015327816, guid: 6d9e5eb177f80cf44ba659166cff3e1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.702634
+      value: 7.2
       objectReference: {fileID: 0}
     - target: {fileID: 2140284851015327816, guid: 6d9e5eb177f80cf44ba659166cff3e1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.3472749
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2140284851015327816, guid: 6d9e5eb177f80cf44ba659166cff3e1f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9601,6 +9602,34 @@ PrefabInstance:
     - target: {fileID: 2648052178157608348, guid: 6d9e5eb177f80cf44ba659166cff3e1f, type: 3}
       propertyPath: m_Name
       value: Flag
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298621078660206140, guid: 6d9e5eb177f80cf44ba659166cff3e1f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298621078660206140, guid: 6d9e5eb177f80cf44ba659166cff3e1f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298621078660206140, guid: 6d9e5eb177f80cf44ba659166cff3e1f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260055011464753395, guid: 6d9e5eb177f80cf44ba659166cff3e1f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260055011464753395, guid: 6d9e5eb177f80cf44ba659166cff3e1f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260055011464753395, guid: 6d9e5eb177f80cf44ba659166cff3e1f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7077225740610162866, guid: 6d9e5eb177f80cf44ba659166cff3e1f, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8820708512011122125, guid: 6d9e5eb177f80cf44ba659166cff3e1f, type: 3}
       propertyPath: NextScene

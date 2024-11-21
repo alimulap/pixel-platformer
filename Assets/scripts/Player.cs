@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -6,6 +8,7 @@ public class Player : MonoBehaviour
     new Collider2D collider;
     SpriteRenderer sprite;
 
+    public int health = 100;
     public float moveSpeed = 1500;
     public float jumpForce = 350;
     public float downCastDebugDistance = 0.5f;
@@ -13,6 +16,8 @@ public class Player : MonoBehaviour
     bool isOnGround;
     RaycastHit2D[] groundCastResult = new RaycastHit2D[10];
     int groundCastHit;
+
+    public event Action<int> OnHealthChanged;
 
     int counter = 0;
 
@@ -94,5 +99,20 @@ public class Player : MonoBehaviour
         {
             Debug.Log(message);
         }
+    }
+
+    public void ModifyHealth(int amount)
+    {
+        this.health += amount;
+        this.OnHealthChanged?.Invoke(this.health);
+        if (this.health <= 0)
+        {
+            SceneManager.LoadScene("Assets/Scenes/MainMenu.unity");
+        }
+    }
+
+    public Bounds ColliderBounds()
+    {
+        return this.collider.bounds;
     }
 }
